@@ -1,0 +1,11 @@
+<h1>Welcome</h1>
+<p>Bienvenue <%= @first_name %>, voici les gossips </p></br>
+
+<% Gossip.all.each_with_index do |gossips, index|%>
+  <p>
+    <p>Potin numéro <%= index +1 %> : <p/>
+    <p>Titre : <%= gossips.title %><br/><p>
+    <p>Auteur : <%= gossips.user.first_name %><p>
+    <p>Voici le lien du potin :<a href="/gossips/<%=index+1%>">lien <%=index + 1%> </a> </p></br>
+  </p>
+<% end %>

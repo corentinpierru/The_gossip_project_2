@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>TheGossipProject1</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <div class="d-flex flex-column aligns-items-left align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+      <h5 class="my-0 font-weight-normal">Gossip Project</h5>
+        <nav class="navbar-toggler">
+        <a class="p-2 text-dark" href="/team">Page team</a>
+        <a class="p-2 text-dark" href="/contact">Page contact</a>
+        <a class="p-2 text-dark" href="/welcome/monsieur-madame">Page d'accueil</a>
+        </nav>
+    </div>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+    
+  </body>
+</html>
